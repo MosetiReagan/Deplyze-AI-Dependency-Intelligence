@@ -1,0 +1,39 @@
+{
+  "$schema": "https://json.schemastore.org/tsconfig",
+  "compilerOptions": {
+    "target": "ES2022",
+    "lib": ["ES2023"],
+    "module": "ESNext",
+    "moduleResolution": "Bundler",
+    "baseUrl": ".",
+    "paths": {
+      "@deplyze/core": ["./packages/core/src/index.ts"],
+      "@deplyze/ecosystems": ["./packages/ecosystems/src/index.ts"],
+      "@deplyze/advisories": ["./packages/advisories/src/index.ts"],
+      "@deplyze/scanners": ["./packages/scanners/src/index.ts"],
+      "@deplyze/risk": ["./packages/risk/src/index.ts"],
+      "@deplyze/sbom": ["./packages/sbom/src/index.ts"],
+      "@deplyze/reporters": ["./packages/reporters/src/index.ts"],
+      "@deplyze/policies": ["./packages/policies/src/index.ts"],
+      "@deplyze/ai": ["./packages/ai/src/index.ts"],
+      "@deplyze/mcp": ["./packages/mcp/src/index.ts"],
+      "@deplyze/config": ["./packages/config/src/index.ts"]
+    },
+    "types": ["node"],
+    "strict": true,
+    "noUncheckedIndexedAccess": true,
+    "noImplicitOverride": true,
+    "noFallthroughCasesInSwitch": true,
+    "exactOptionalPropertyTypes": false,
+    "esModuleInterop": true,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "forceConsistentCasingInFileNames": true,
+    "declaration": true,
+    "declarationMap": true,
+    "sourceMap": true,
+    "composite": false,
+    "isolatedModules": true,
+    "verbatimModuleSyntax": false
+  }
+}

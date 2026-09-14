@@ -1,0 +1,6 @@
+{
+  "name": "fixture-lifecycle-script-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": { "suspicious-installer": "1.0.0" }
+}

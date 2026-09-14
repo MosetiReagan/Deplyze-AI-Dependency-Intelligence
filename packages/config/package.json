@@ -1,0 +1,28 @@
+{
+  "name": "@deplyze/config",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Configuration discovery, schema validation and defaults for Deplyze.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --sourcemap",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deplyze/core": "workspace:*",
+    "yaml": "^2.6.1",
+    "zod": "^3.24.1"
+  }
+}

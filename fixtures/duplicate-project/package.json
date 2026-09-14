@@ -1,0 +1,6 @@
+{
+  "name": "fixture-duplicate-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": { "alpha": "1.0.0", "beta": "1.0.0" }
+}

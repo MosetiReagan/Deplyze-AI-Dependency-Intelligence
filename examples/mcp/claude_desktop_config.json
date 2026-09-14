@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "deplyze": {
+      "command": "npx",
+      "args": ["-y", "deplyze", "mcp"]
+    }
+  }
+}

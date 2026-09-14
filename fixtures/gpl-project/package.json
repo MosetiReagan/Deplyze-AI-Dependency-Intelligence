@@ -1,0 +1,6 @@
+{
+  "name": "fixture-gpl-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": { "gpl-library": "1.0.0" }
+}

@@ -1,0 +1,32 @@
+{
+  "name": "@deplyze/mcp",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Model Context Protocol server exposing Deplyze dependency intelligence to AI coding agents.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --sourcemap",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deplyze/config": "workspace:*",
+    "@deplyze/core": "workspace:*",
+    "@deplyze/policies": "workspace:*",
+    "@deplyze/sbom": "workspace:*",
+    "@deplyze/scanners": "workspace:*",
+    "@modelcontextprotocol/sdk": "^1.0.4",
+    "zod": "^3.24.1"
+  }
+}

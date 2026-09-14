@@ -1,0 +1,9 @@
+{
+  "name": "fixture-typosquat-project",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "expreess": "1.0.0",
+    "preact": "10.19.0"
+  }
+}

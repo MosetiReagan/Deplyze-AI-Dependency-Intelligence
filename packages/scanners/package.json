@@ -1,0 +1,30 @@
+{
+  "name": "@deplyze/scanners",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Deterministic analysis engines: vulnerabilities, licenses, outdated, unused, duplicates, typosquats, lifecycle scripts.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --sourcemap",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deplyze/advisories": "workspace:*",
+    "@deplyze/config": "workspace:*",
+    "@deplyze/core": "workspace:*",
+    "@deplyze/ecosystems": "workspace:*",
+    "@deplyze/risk": "workspace:*"
+  }
+}

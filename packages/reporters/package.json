@@ -1,0 +1,27 @@
+{
+  "name": "@deplyze/reporters",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Terminal, JSON, Markdown, SARIF and HTML reporters for Deplyze scan results.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format esm --dts --clean --sourcemap",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deplyze/core": "workspace:*",
+    "@deplyze/scanners": "workspace:*"
+  }
+}

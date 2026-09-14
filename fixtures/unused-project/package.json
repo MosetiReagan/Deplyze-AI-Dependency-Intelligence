@@ -1,0 +1,13 @@
+{
+  "name": "fixture-unused-project",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": { "build": "used-build-tool" },
+  "dependencies": {
+    "used-package": "1.0.0",
+    "never-imported": "1.0.0",
+    "script-only-package": "1.0.0"
+  },
+  "devDependencies": { "@types/node": "20.0.0" }
+}

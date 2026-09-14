@@ -1,0 +1,6 @@
+{
+  "name": "@fixture/api",
+  "version": "1.0.0",
+  "license": "MIT",
+  "dependencies": { "@fixture/lib": "workspace:*", "express": "4.18.2" }
+}

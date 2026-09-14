@@ -1,0 +1,61 @@
+{
+  "name": "deplyze",
+  "version": "0.1.0",
+  "private": false,
+  "description": "Deplyze \u2014 AI Dependency Intelligence. Dependency and software supply-chain auditing for modern applications and AI coding agents.",
+  "license": "Apache-2.0",
+  "type": "module",
+  "bin": {
+    "deplyze": "./dist/bin.js"
+  },
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "keywords": [
+    "dependency",
+    "security",
+    "sbom",
+    "supply-chain",
+    "vulnerability",
+    "npm",
+    "audit",
+    "osv",
+    "mcp",
+    "ai-agents"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@deplyze/advisories": "workspace:*",
+    "@deplyze/ai": "workspace:*",
+    "@deplyze/config": "workspace:*",
+    "@deplyze/core": "workspace:*",
+    "@deplyze/ecosystems": "workspace:*",
+    "@deplyze/mcp": "workspace:*",
+    "@deplyze/policies": "workspace:*",
+    "@deplyze/reporters": "workspace:*",
+    "@deplyze/risk": "workspace:*",
+    "@deplyze/sbom": "workspace:*",
+    "@deplyze/scanners": "workspace:*",
+    "commander": "^13.0.0"
+  },
+  "publishConfig": {
+    "access": "public",
+    "provenance": true
+  }
+}

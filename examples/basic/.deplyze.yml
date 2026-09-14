@@ -1,0 +1,32 @@
+# A pragmatic default policy for an application (not a library).
+version: 1
+
+scan:
+  includeDev: true
+
+security:
+  # Fail CI on the severities that actually get exploited first.
+  failOn: [critical, high]
+  vulnerabilities:
+    maxCritical: 0
+    maxHigh: 0
+  deprecated:
+    fail: true
+  installScripts:
+    # Require review of scripts that match known-dangerous patterns.
+    failOn: [high]
+
+licenses:
+  allowed:
+    - MIT
+    - Apache-2.0
+    - BSD-2-Clause
+    - BSD-3-Clause
+    - ISC
+  denied:
+    - AGPL-3.0
+  unknown: warn
+
+output:
+  format: terminal
+  color: auto
